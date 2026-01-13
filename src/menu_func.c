@@ -37,8 +37,8 @@
 static int dump_nand_and_spare_to_files(FILE * nand_file, FILE * spare_file);
 
 static int get_unsafe_write_confirmation(void);
-static int open_and_check_files(FILE * nand_file, FILE * spare_file);
-static int write_nand_and_spare_to_player(FILE * nand_file, FILE * spare_file, int block_start);
+static int open_and_check_files(FILE ** nand_file, FILE ** spare_file);
+static int write_nand_and_spare_to_player(FILE ** nand_file, FILE ** spare_file, int block_start);
 static int reading_files_failed(FILE * nand_file,  unsigned char * block_buffer,
                                 FILE * spare_file, unsigned char * spare_buffer);
 
